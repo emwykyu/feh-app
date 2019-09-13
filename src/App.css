@@ -1,0 +1,276 @@
+.appcontainer {
+  /* background-color: #1d1e22; */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./components/fehmainbg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 2px 9fr;
+  grid-template-rows: 100vh;
+  grid-template-areas:
+    "form . searchResult"
+    "form . searchResult";
+    /* padding-top: 3em; */
+}
+
+.form {
+  grid-area: form;
+  padding: 1em;
+  color: #65a29c;
+  background-color: #1d1e22;  
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./components/fehmainbg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  
+  /* background-color: #ECEFF1; */
+}
+
+.form input :active {
+  color: #65a29c;
+}
+
+.form input :focus{
+  background: #fff;
+  color: #fff;
+}
+
+.select-wrapper li {
+  background: #424242;
+}
+
+.select-wrapper li :hover {
+  color: #fff;
+  background: #65a29c;
+}
+
+.select-wrapper li > .selected {
+  color: #fff;
+  background: #65a29c;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.searchResult {
+  grid-area: searchResult;
+  height: 100%;
+  
+  overflow-y: scroll;
+  scrollbar-width: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.heroListItem{
+  padding: 5px;
+
+  opacity: 0.7;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+
+  background: none;
+  transition: background .25s ease-in-out;
+  -moz-transition: background .25s ease-in-out;
+  -webkit-transition: background .25s ease-in-out;
+  
+  color: #fff;
+  transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
+}
+
+.heroListItem p{
+  padding: 0 5px 
+}
+
+.heroListItem:hover{
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+  color: #65a29c;  
+} 
+
+.resultsGridContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchResultTable {
+  color: #fff;
+  background: #1d1e22;  
+  padding: 0 1em;
+  max-width: 30em;
+  min-width: 1fr;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color:  #65a29c #1d1e22;
+}
+
+.searchResultTable ::-webkit-scrollbar{
+  background: #1d1e22;
+}
+
+.searchResultTable ::-webkit-scrollbar-thumb{
+  background-color: #65a29c;
+}
+
+/* .searchResultTable td {
+  margin-right: 2em;
+} */
+
+.heroCard {  
+  padding-left: 5em;
+  width: 100%;
+  margin-right: 1em;
+}
+
+.heroCard h1{
+  color: #FFCA28;
+}
+
+.cardContainer {
+  min-height: 95vh;
+  max-height: 95vh;
+}
+
+.cardContainer h1 {
+  margin-bottom: 0;
+}
+.cardContainer > p {
+  margin-bottom: 4em;
+}
+
+/* card section with Weapon Movement and Rarity stats*/
+.cardStats {
+  padding-top: 3px;
+  /* background: #1d1e22; */
+  color: #fff;
+  line-height: 1;
+  font-size: 1.5em;
+  display: flex;
+  width: fit-content;
+}
+
+.cardStats div {
+  margin-right: 2em;
+}
+
+.cardStats div span {
+  vertical-align: middle;
+}
+
+.heroData{
+  height: 60vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color:  #65a29c rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+  /* background: rgba(0, 0, 0, 0.9); */
+  width: fit-content;
+  margin-top: 1em;
+}
+
+.skillsSection {
+  /* background: rgba(0, 0, 0, 0.9); */
+  min-height: 100px;
+  width: 18em;
+  height: auto;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.statsSection {  
+  min-height: 100px;
+  width: 18em;
+  height: auto;
+  margin-top: 5em;  
+  padding: 0 1em;
+}
+
+.statsSection table{
+  /* background: rgba(0, 0, 0, 0.9); */
+  margin: 2em 0;
+
+}
+
+.statsSection th{
+  width: min-content !important;
+}
+
+
+/* main background for hero cards */
+.heroStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./components/fehmainbg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.heroStyle a {
+  top: 45%;
+  left: 0%;
+}
+
+/* styles for content pages - in development - */
+.blurb {
+  min-height: 70vh;
+  max-height: 70vh;
+  display: grid;
+  grid-template-columns: 2em 1fr 1fr 1fr 1fr 1fr 1fr 2em;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+    ". . . vidHeading vidHeading . . ."
+    ". . vidText vidText vidText vidText . ."
+    ". cardRow cardRow cardRow cardRow cardRow cardRow .";
+}
+
+.vidHeading {
+  grid-area: vidHeading;
+  text-align: center;
+}
+
+.vidText {
+  grid-area: vidText;
+}
+
+.cardRow{
+  grid-area: cardRow;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.card-image{
+  margin: 0 1em;
+}
+
+.modal{
+  background: #000;
+  height: 60vh;
+  overflow-x: hidden;
+}
+
+.modal-content{
+  height: 100%;
+  padding: 1px;
+}
